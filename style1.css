@@ -1,0 +1,39 @@
+*{
+    transition: all 2s;
+}
+body { 
+    background: bisque;
+    background-image: url(https://images.unsplash.com/photo-1541661538396-53ba2d051eed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80);
+    
+}
+
+.row{
+border: 5px solid black;
+display: flex;
+justify-content: center;
+justify-content: space-between;
+}
+
+
+.column{
+background: rgba(255,255,255,1);
+width: 150px;
+height: 150px;
+margin: 20px;
+}
+
+#bio .column{
+    width: 50%;
+    background-color:orange;
+    
+    
+}
+
+.column:hover {
+    transform: rotate(360deg);
+    transform: flip(360deg);
+    background-color: cornflowerblue;
+}
+#bio .column:hover{
+    transform:rotateY(360deg)
+}
